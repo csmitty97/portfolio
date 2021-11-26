@@ -1,0 +1,333 @@
+/* Home Page */
+.title{
+    height:100%;
+    display:block;
+    margin-top:10%;
+    margin-left:35%;
+    font-size:20px;
+}
+
+.link{
+    margin-top:-1em;
+    margin-left:5%;
+    list-style:none;
+}
+
+
+
+.film{
+    display: block;
+    height:35%;
+    width:35%;
+    position:fixed;
+    top:30%;
+    right:10%;
+    z-index: -5;
+}
+
+.imgbox{
+    width:100%;
+    height:100%;
+}
+
+.center{
+    
+    justify-content:center;
+}
+
+.box{
+    width:35%;
+    margin-left:10%;
+}
+
+.target{
+    list-style:none;
+    display:flex;
+    bottom:40%;
+    margin-left:50%;
+    position:static;
+}
+.homefooter{
+    position:sticky;
+    width:100%;
+    bottom:0;
+    background-color:#ffeed9;
+    border-top-style:solid;
+    
+}
+    
+    
+    
+
+/* End of Home Page */
+
+
+
+/* Nav Bar */
+
+body{
+    font-family: sans-serif;
+    margin:0;
+    background-color:#ffeed9;
+    
+}
+
+.background{
+    background-image: url(../img/film.png);
+    background-attachment: fixed;
+}
+
+.primary{
+    text-align:center;
+    background-color:#ffe8c9;
+    padding-top: .5em;
+    padding-bottom:.5em;
+    border-bottom-style:solid;
+}
+
+.navbar{
+    width: 100%;
+    background-color:#ffeed9;
+    padding-top:1px;
+    margin-bottom: 1em;
+    text-align:center;
+    border-bottom-style:solid;
+    
+}
+
+ nav ul {
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    margin-right:2em;
+}
+
+   li a{
+    text-decoration:none;
+    font-size:18px;
+    color:black;
+    position:relative;
+    font-weight:bold;
+    padding-top:-10px;
+    margin:0px 20px;
+    display:inline-block;
+}
+
+li a::after{
+    content:"";
+    position:absolute;
+    display:block;
+    height:.25em;
+    width:0;
+    background-color:#4169e1;
+    transition: 0.3s;
+    transform:scaleX(0);
+}
+
+ li a:hover{
+    color:#4169e1;
+}
+
+ li a:hover::after{
+    width:100%;
+    transform: scaleX(1);
+}
+
+p{
+    margin:20px 20px 20px 10px;
+}
+
+#titles{
+    text-align:center;
+    margin-top:-15px;
+    margin-bottom:20px;
+}
+
+
+/* End of Nav Bar */
+
+/* Start of Body */
+.container{
+  margin: auto;
+  padding:1em 0 20px 20px;
+  width:55%;
+  background-color:#ffe8c9;;
+  border-style:solid;
+  border-width:.25em;
+  box-shadow: 10px 10px grey;
+}
+
+
+
+/* End of Body */
+
+/* Start of Footer */
+footer{
+    bottom:0;
+    position:absolute;
+    margin-top:2em;
+     font-size:12px;
+}
+
+.footer{
+    position:sticky;
+    width:100%;
+    border-top-style:solid;
+    /* Height of the footer*/
+    padding-top:3px;
+    background-color:#ffeed9;
+    margin-bottom:-1em;
+}
+
+  footer ul {
+    list-style: none;
+    display:flex;
+    margin-top:.35em;
+}
+
+footer li{
+    display:inline-block;
+    margin-right:5em;
+    margin-bottom: 7px;
+    
+}
+
+footer a:first-child{
+    margin:auto;
+    margin-left:3em;
+}
+
+/* End of Footer
+
+
+
+
+/* Misc */
+.fade-in{
+    animation:fadeIn 3s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+
+
+to{
+    opacity:1;
+    }
+}
+
+
+ h5, p{
+    text-indent:2em;
+}
+
+h1{
+    text-indent:3em;
+}
+
+img{
+    height:15em;
+    float: right;
+    padding-left:1em;
+    padding-right:1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* End of Misc */
+
+/* Media Queries */
+
+@media screen and (min-width:1025px){
+    .navbar{
+        position:sticky;
+        top:0;
+    }
+    nav ul i{
+        visibility: hidden;
+    }
+    
+}
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px){
+   
+    .navbar ul {
+        display:block;
+        position:static;
+    }
+    
+    nav ul{
+        padding-right:1em;
+    }
+    
+    nav ul li{
+        padding-bottom:5px;
+    }
+
+   body{
+       font-size:14px
+   }
+   
+   .container{
+       width:75%;
+   }
+   
+   .footer ul{
+       display:flex;
+       margin:auto;
+       padding-left:10em;
+   }
+   
+    
+    
+}
+
+    
+/* Phone */
+@media screen and (max-width: 480px){
+       
+    .navbar ul{
+        text-align:center;
+        display:block;
+        background-color:green;
+        
+    }
+    
+    body{
+        font-size:12px;
+    }
+    
+    .footer ul{
+        display:flex;
+        justify-content:center;
+        padding-right:5em;
+    }
+    img{
+        float:right;
+        height:10em;
+    }
+
+}
+    
+   
+    
+
+
+
+
+
+  
