@@ -2,7 +2,7 @@
 .title{
     height:100%;
     display:block;
-    margin-top:10%;
+    margin-top:5%;
     margin-left:35%;
     font-size:20px;
 }
@@ -13,51 +13,52 @@
     list-style:none;
 }
 
+.linkedin{
+    height:8em;
+    width:8em;
+    z-index: -6;
+    margin-bottom:-2em;
+}
+.mail{
+    height:5em;
+    width:7em;
+    z-index:-6;
+    margin-top:1.4em;
+}
 
-
+/**/
 .film{
-    display: block;
     height:35%;
     width:35%;
-    position:fixed;
-    top:30%;
-    right:10%;
+    margin-right:15%;
     z-index: -5;
-}
-
-.imgbox{
-    width:100%;
-    height:100%;
-}
-
-.center{
-    
-    justify-content:center;
+    margin-top:3%;
 }
 
 .box{
-    width:35%;
-    margin-left:10%;
+    width:30%;
+    height:50%;
+    margin-top:2em;
+    margin-left:15%;
 }
+
+
 
 .target{
     list-style:none;
     display:flex;
-    bottom:40%;
-    margin-left:50%;
-    position:static;
+    margin-left:20%;
+    margin-bottom: 20;
 }
+
 .homefooter{
-    position:sticky;
+    position:absolute;
     width:100%;
     bottom:0;
     background-color:#ffeed9;
     border-top-style:solid;
     
 }
-    
-    
-    
 
 /* End of Home Page */
 
@@ -135,6 +136,12 @@ li a::after{
 
 p{
     margin:20px 20px 20px 10px;
+    font-size:15px;
+    
+}
+
+h4,p2{
+    font-size:15px;
 }
 
 #titles{
@@ -150,7 +157,7 @@ p{
 .container{
   margin: auto;
   padding:1em 0 20px 20px;
-  width:55%;
+  width:50%;
   background-color:#ffe8c9;;
   border-style:solid;
   border-width:.25em;
@@ -176,6 +183,15 @@ footer{
     /* Height of the footer*/
     padding-top:3px;
     background-color:#ffeed9;
+    margin-bottom:-1em;
+}
+
+.backupfooter{
+    position:absolute;
+    width:100%;
+    border-top-style:solid;
+    background-color:#ffeed9;
+    padding-top:3px;
     margin-bottom:-1em;
 }
 
@@ -219,8 +235,9 @@ to{
 }
 
 
- h5, p{
+ h4, p{
     text-indent:2em;
+    
 }
 
 h1{
@@ -234,14 +251,22 @@ img{
     padding-right:1em;
 }
 
+/*************************************Skills***************************************/
+
+.column{
+    float:left;
+    width:33.33%;
+    text-align:center;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
 
 
-
-
-
-
-
-
+/*************************************Skills***************************************/
 
 
 /* End of Misc */
@@ -258,8 +283,6 @@ img{
     }
     
 }
-
-
 
 
 /* Tablet */
@@ -292,8 +315,16 @@ img{
        padding-left:10em;
    }
    
-    
-    
+   .box{
+       width:50%;
+   }
+   .film{
+       margin-top:10em;
+   }
+   .homefooter{
+       position:sticky;
+   }
+  
 }
 
     
@@ -303,8 +334,6 @@ img{
     .navbar ul{
         text-align:center;
         display:block;
-        background-color:green;
-        
     }
     
     body{
@@ -316,9 +345,35 @@ img{
         justify-content:center;
         padding-right:5em;
     }
+    
     img{
         float:right;
         height:10em;
+    }
+    
+    .film{
+        display:none;
+    }
+    
+    .target,.link, .title{
+        text-align:center;
+        font-size:15px;
+    }
+    
+    .link, .title{
+        
+        margin-right:25%;
+    }
+
+    .box{
+        margin-top:1em;
+        margin-left:27%;
+        
+    }
+    
+    .linkedin, .mail{
+        display: flex;
+        
     }
 
 }
