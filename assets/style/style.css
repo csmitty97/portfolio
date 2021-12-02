@@ -336,8 +336,16 @@ img{
     width:20%;
     height:20;
     float:right;
-    margin-top:-1em;
+    margin-top:-3em;
     
+}
+
+.schools{
+    width:25%;
+    height:25%;
+    float:left;
+    padding:15px;
+    margin-top:-3em;
 }
 /* End of Misc */
 
