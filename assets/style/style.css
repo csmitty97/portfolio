@@ -268,7 +268,77 @@ img{
 
 /*************************************Skills***************************************/
 
+.center{
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    text-decoration:underline;
+}
 
+.video{
+    width:55%;
+    text-align:center;
+    margin:auto;
+    display:block;
+}
+.hiddenlove{
+    width:28%;
+    padding:10px;
+    
+}
+.lying{
+    width:20%;
+    height:20%;
+    float:right;
+    padding-bottom:30px;
+}
+
+.nanny{
+    width:30%;
+    height:30%;
+    float:left;
+    padding:20px;
+}
+
+.intj{
+    width:25%;
+    height:25%;
+    float:right;
+    padding:20px;
+}
+
+.spacebear{
+    width:30%;
+    height:30%;
+    float:right;
+    padding:20px;
+    margin-top:-1em;
+    
+}
+
+.starco{
+    width:25%;
+    height:25%;
+    float:left;
+    padding-right:20px;
+    margin-top:-1em;
+}
+
+.currency{
+    width:30%;
+    height:30%;
+    float:left;
+    padding:15px;
+    margin-top:-2em;
+}
+
+.music{
+    width:20%;
+    height:20;
+    float:right;
+    margin-top:-1em;
+    
+}
 /* End of Misc */
 
 /* Media Queries */
@@ -281,6 +351,13 @@ img{
     nav ul i{
         visibility: hidden;
     }
+    
+    
+    .snatched{
+        max-width:50%;
+        height:38%;
+    }
+    
     
 }
 
@@ -304,6 +381,9 @@ img{
    body{
        font-size:14px
    }
+   footer{
+       position:sticky;
+   }
    
    .container{
        width:75%;
@@ -315,6 +395,9 @@ img{
        padding-left:10em;
    }
    
+   .backupfooter{
+       position:sticky;
+   }
    .box{
        width:50%;
    }
@@ -323,6 +406,12 @@ img{
    }
    .homefooter{
        position:sticky;
+   }
+    
+   .snatched{
+       width:50%;
+       height:45%;
+       
    }
   
 }
@@ -338,6 +427,10 @@ img{
     
     body{
         font-size:12px;
+    }
+    
+    footer{
+        position:sticky;
     }
     
     .footer ul{
@@ -375,7 +468,7 @@ img{
         display: flex;
         
     }
-
+  
 }
     
    
